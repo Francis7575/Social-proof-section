@@ -1,0 +1,74 @@
+.feedbackContainer {
+    background: #512051;
+    border-radius: 8px;
+    padding: 2.68rem 2rem 2.18rem 2rem;
+}
+
+.buyerContainer {
+    display: flex;
+    align-items: center;
+    gap: 1.43rem;
+    margin-bottom: 1.5rem;
+}
+
+.buyerInfo {
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+}
+
+.buyerImage {
+    max-width: 2.5rem;
+    border-radius: 40px;
+}
+
+.buyerName,
+.buyerStatus,
+.paragraph {
+    font-size: 1.063rem;
+}
+
+.buyerName {
+    color: #fff;
+    font-weight: 700;
+}
+
+.buyerStatus {
+    color: #EE69A4;
+}
+
+.paragraph {
+    font-weight: 500;
+    letter-spacing: -0.304px;
+    line-height: 1.37rem;
+    color: #fff;
+}
+
+@media (min-width: 64em) {
+    .feedbackContainer {
+        flex: 1;
+    }
+
+    .feedbackContainer:nth-child(1) {
+        align-self: baseline;
+    }
+
+    .feedbackContainer:nth-child(2) {
+        align-self: center;
+    }
+
+    .feedbackContainer:nth-child(3) {
+        align-self: flex-end;
+    }
+}
+
+@media(min-width: 90em) {
+    .buyerContainer {
+        margin-bottom: 2rem;
+    }
+
+    .feedbackContainer {
+        padding: 2.68rem 2rem 2.18rem 2rem;
+        margin-right: 1.87rem;
+    }
+}
